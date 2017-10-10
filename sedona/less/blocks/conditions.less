@@ -1,0 +1,110 @@
+.conditions {
+
+	@media @screen_tab {
+		display: flex;
+	}
+}
+
+.conditions-item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 6.25% 0 0;
+	align-items: flex-start;
+	text-align: left;
+
+	&:last-child {
+		padding: 0 6.25% 35px 0;
+	}
+
+	@media @screen_tab {
+		display: block;
+		width: 33.33%;
+		padding: 0 4% 60px 4%;
+		text-align: center;
+
+		&:last-child {
+			padding: 0 4% 60px 4%;
+		}
+	}
+}
+
+.conditions-item__heading {
+	display: block;
+	margin: 34px 0 10px 22%;
+	font-family: 'PT Sans Bold';
+	font-size: 18px;
+
+	@media @screen_tab {
+		margin: 0 auto 30px auto;
+		font-size: 22px;
+	}
+
+	@media @screen_desk {
+		font-size: 26px;
+	}
+}
+
+.conditions-item__content {
+	margin: 0 0 0 22%;
+	font-size: 16px;
+
+	@media @screen_tab {
+		margin: 0;
+		font-size: 18px;
+	}
+
+	@media @screen_desk {
+		font-size: 20px;
+	}
+}
+
+//-----
+
+.conditions-item__icon {
+	position: absolute;
+	top: 26px;
+	left: 6.25%;
+
+	@media @screen_tab {
+		position: static;
+	}
+}
+
+.conditions-item__icon_house {
+	width: 39px;
+	height: 37px;
+	background: url("../img/icon-house.svg") no-repeat center /cover;
+
+	@media @screen_tab {
+		width: 75px;
+		height: 72px;
+		margin: 60px auto 30px auto;
+	}
+}
+
+.conditions-item__icon_gift {
+	width: 32px;
+	height: 38px;
+	background: url("../img/icon-gift.svg") no-repeat center /cover;
+	
+	@media @screen_tab {
+		width: 64px;
+		height: 76px;
+		margin: 56px auto 30px auto;
+	}
+	
+}
+
+.conditions-item__icon_food {
+	width: 40px;
+	height: 35px;
+	background: url("../img/icon-burger.svg") no-repeat center /cover;
+
+	@media @screen_tab {
+		width: 77px;
+		height: 69px;
+		margin: 63px auto 30px auto;
+	}
+}

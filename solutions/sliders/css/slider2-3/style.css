@@ -1,0 +1,80 @@
+.slider {
+	position: relative;
+  width: 400px;
+  height: 250px;
+  border: 1px solid #888;
+  overflow: hidden;
+}
+
+.slider > input {
+  display: none;
+}
+
+.btn {
+  display: none;
+}
+
+.slider > input:checked + div + label,
+.slider > input:checked + div + label + label {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: rgba(150, 150, 250, 0.3);
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+ }
+
+.slider > input:checked + div + label {
+  left: -40px;
+}
+
+.slider > input:checked + div + label + label {
+  right: -40px;
+}
+
+.slider > input:checked + div + label:after,
+.slider > input:checked + div + label + label:after {
+  display: block;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+
+  font-size: 30px;
+  line-height: 80px;
+  color: #fff;
+}
+
+.slider > input:checked + div + label:after {
+  content: '◀';
+  left: 55%;
+}
+
+.slider > input:checked + div + label + label:after {
+  content: '▶';
+  right: 55%;
+}
+
+.s-picture {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 0;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+
+.slider > input:checked + div {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}

@@ -1,0 +1,31 @@
+body {
+	background-color: #aaa;
+}
+.single-item {
+	width: 700px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+.box {
+	width: 700px;
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.box_1 {
+	background-image: url("img/1.jpg");
+}
+
+.box_2 {
+	background-image: url("img/2.jpg");
+}
+
+.box_3 {
+	background-image: url("img/3.jpg");
+}
+
+.box_4 {
+	background-image: url("img/4.jpg");
+}

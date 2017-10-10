@@ -1,0 +1,102 @@
+.visited {
+	padding: 20px 6.25% 25px;
+	border-top: 1px solid #e5e5e5;
+	box-sizing: border-box;
+
+	@media @screen_tab {
+		order: 3;
+		width: 84.4%;
+		margin: 0 auto;
+		padding: 25px 0 15px;
+	}
+
+	@media @screen_desk {
+		width: 80%;
+		padding: 25px 0 50px;
+	}
+}
+
+.visited__container {
+	display: flex;
+	flex-direction: column;
+
+	@media @screen_tab {
+		flex-wrap: wrap;
+		align-content: space-evenly;
+		height: 200px;
+	}
+
+	@media @screen_desk {
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: no-wrap;
+		height: auto;
+	}
+}
+
+.visited__title {
+	margin: 5px 0 30px 0;
+
+	&_tab {
+		display: none;
+	}
+
+	@media @screen_tab {
+		display: none;
+
+		&_tab {
+			display: block;
+			width: 450px;
+			margin: 5 auto 30px auto;
+			padding: 0 7.8%;
+			text-align: center;
+		}
+	}
+
+	@media @screen_desk {
+		&_tab {
+			margin: 50px 0 50px 0;
+		}
+	}
+}
+
+.visited__box {
+	display: flex;
+}
+
+.visited__input {
+	display: none;
+}
+
+.visited__label {
+	position: relative;
+	margin: 16px 0 36px 0;
+	padding: 0 0 0 70px;
+	font-family: 'PT Sans Bold';
+	font-size: 18px;
+	line-height: 26px;
+	text-transform: initial;
+	cursor: pointer;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -16px;
+		left: 0;
+		display: block;
+		width: 58px;
+		height: 58px;
+		margin: 0 5% 0 0;
+		background: #f2f2f2;
+		box-sizing: border-box;
+		border-radius: 4px;
+	}
+
+	@media @screen_tab {
+		margin: 16px 0 46px 0;
+	}
+}
+
+.visited__input:checked + .visited__label::before {
+	background: #f2f2f2 url("../img/icon-tick.svg") no-repeat center;
+}

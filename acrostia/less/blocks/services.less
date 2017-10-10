@@ -1,0 +1,84 @@
+.services {
+	.fullscreen();
+	position: relative;
+	min-width: 1500px;
+	max-width: 1800px;
+	text-align: center;
+	color: #ffffff;
+	background-color: @red_bg;
+	background-image: url("../img/bg/services_bg.png");
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.services__container {
+	.container();
+	padding: 160px 20px 125px;
+}
+
+//----------------------------
+
+.capability {
+	font-size: 0;
+}
+
+.capability-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 23%;
+	margin-right: 2.66%;
+	padding: 40px 25px;
+	background: #c45158;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	box-sizing: border-box;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.capability-item__title {
+	margin-top: 12px;
+	margin-bottom: 27px;
+	font-family: 'Lato Light';
+	font-size: 28px;
+	line-height: 58px;
+	text-transform: uppercase;
+}
+
+.capability-item__content {
+	margin-bottom: 0;
+	font-family: 'Lato Regular';
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.capability-item__icon {
+	width: 140px;
+	height: 140px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	border: 5px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 5px @red;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.capability-item__icon_lightball {
+	background-image: url('../img/icons/lightball.png');
+}
+
+.capability-item__icon_wand {
+	background-image: url('../img/icons/wand.png');
+}
+
+.capability-item__icon_giars {
+	background-image: url('../img/icons/giars.png');
+}
+
+.capability-item__icon_rocket {
+	background-image: url('../img/icons/rocket.png');
+}

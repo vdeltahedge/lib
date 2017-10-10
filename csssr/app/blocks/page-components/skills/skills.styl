@@ -1,0 +1,58 @@
+.skills
+	margin-bottom 47px
+
+.skills-paragraph
+	margin-bottom 32px
+
+	&__title
+		title-p()
+		margin-bottom 5px
+
+	&__content
+		content-p()
+
+.skills-list
+	display flex
+	flex-direction column
+	flex-wrap wrap
+	height 250px
+
+.skills-item
+	margin-bottom 14px
+	
+	&:last-child
+		width 200px
+
+	&__label
+		position relative
+		padding-left 28px
+		display block
+		font-family $ptsans_b
+		font-size 21px
+		line-height 21px
+		cursor pointer
+
+	&__box
+		position absolute
+		top 0
+		left 0
+		width 18px
+		height 18px
+		cursor pointer
+		background url('../images/checkbox-box.png') no-repeat center
+
+	&__input
+		display none
+
+.skills-item__label input:checked + div::after
+	position absolute
+	left 2px
+	bottom 2px
+	display block
+	content ''
+	width 21px
+	height 27px
+	background url('../images/checkbox-check.png') no-repeat center
+
+.blog-link
+	color $blue

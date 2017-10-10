@@ -1,0 +1,37 @@
+body {
+	background: #1f1f1f;
+	padding: 10px;
+}
+
+.slider {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 0;
+}
+
+.slider img {
+	width: 1024px;
+	height: 700px;
+	display: block;
+}
+
+.slider__container {
+	width: 1024px;
+	height: 700px;
+	overflow: hidden;
+}
+
+.slider__list {
+	width: 9999px;
+	height: 130px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	transition: margin-left 250ms;
+}
+
+.slider__item {
+	display: inline-block;
+}

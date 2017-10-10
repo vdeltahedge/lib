@@ -1,0 +1,124 @@
+.reviews {
+	position: relative; // для позиционирования reviews__btn
+
+	@media (min-width: @screen_desktop) {
+		padding-top: 130px;
+		background: @bg_white url("../img/quotes.svg") center 75px no-repeat;
+	}
+}
+
+.reviews__container {
+	.container();
+
+	width: 70%;
+	min-height: 300px;
+	margin-top: 28px;
+	overflow: hidden;
+	
+	@media (min-width: @screen_tablet) {
+		width: 70%;
+		padding-top: 50px;
+	}
+
+	@media (min-width: @screen_desktop) {
+		width: 70%;
+		padding-bottom: 8px;
+	}
+}
+
+.reviews__list {
+	position: relative;// для switches__btn
+	width: 300%;
+	text-align: left;
+	transition: left .6s;
+	font-size: 0;
+}
+
+.reviews-item {
+	margin-bottom: 27px;
+	display: inline-block;
+	width: 30%;
+	margin-left: 1.66%;
+	margin-right: 1.66%;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.reviews-item__title {
+	font-size: @font-size_h2;
+  font-weight: (@font-weight_base + 300);
+
+  @media (min-width: @screen_tablet) {
+    font-size: (@font-size_h2 + 0.125);
+  }
+
+  @media (min-width: @screen_desktop) {
+    font-size: (@font-size_h2 + 0.375);
+  }
+}
+
+.reviews-item__title_upper {
+
+	@media (min-width: @screen_tablet) {
+      display: none;
+  }
+}
+
+.reviews-item__title_lower {
+	display: none;
+
+	@media (min-width: @screen_tablet) {
+		display: block;
+    margin-top: 32px;
+    margin-bottom: 0;
+	}
+}
+
+.reviews-item__text {
+	font-size: 1.125rem;
+	line-height: 2.1;
+
+	@media (min-width: @screen_tablet) {
+		line-height: @line-height_base;
+	}
+}
+
+.reviews-item__info {
+	display: none;
+	font-size: @font-size;
+
+	@media (min-width: @screen_tablet) {
+    display: block;
+    margin-top: 5px;
+  }
+
+  @media (min-width: @screen_desktop) {
+    font-size: (@font-size_big);
+  }
+}
+
+.reviews__btn {
+	position: absolute;
+	top: 50%;
+	display: none;
+
+	@media (min-width: @screen_desktop) {
+		display: block;
+	}
+}
+
+.reviews__btn_prev {
+	left: 5%;
+}
+
+.reviews__btn_next {
+	right: 5%;
+}
+
+.reviews__btn:hover .control-color {
+  fill: #7e868f;
+}
+
+.reviews__btn:active .control-color {
+  opacity: 0.3;
+}

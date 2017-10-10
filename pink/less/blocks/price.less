@@ -1,0 +1,161 @@
+.price {
+	padding-top: 90px;
+	padding-bottom: 43px;
+	text-transform: uppercase;
+	overflow: hidden;
+	background: @bg_grey url("../img/triangle-white.svg") center top no-repeat;
+	background-size: 100% 100px;
+
+  	@media (min-width: @screen_desktop) {
+    	padding-top: 114px;
+    }
+}
+
+.price-table {
+	.container();
+	position: relative;
+
+	width: 845px;
+	margin: 48px auto 34px;
+	border-collapse: collapse;
+
+	left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: @screen_tablet) {
+    position: static;
+    margin: 36px auto 26px;
+    width: @width-container_tablet;
+    transform: none;
+  }
+
+  @media (min-width: @screen_desktop) {
+    width: @width-container_desktop;
+  }
+}
+
+.price-table__header {
+	position: relative;
+	width: 25%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: @grey_dark;
+  color: @text_white;
+  border: 2px solid #e5e5e5;
+
+  @media (min-width: @screen_tablet) {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  @media (min-width: @screen_desktop) {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+}
+
+.price-table__title {
+	font-size: @font-size_big;
+  font-weight: (@font-weight_base + 300);
+  line-height: 1.2;
+}
+
+.price-table__cost {
+	font-size: @font-size_h1;
+  font-weight: (@font-weight_base - 100);
+  line-height: 1;
+
+  @media (min-width: @screen_tablet) {
+    font-size: @font-size_big;
+    line-height: 0.8;
+  }
+
+  @media (min-width: @screen_desktop) {
+    font-size: @font-size_h1;
+    line-height: 1;
+  }
+}
+
+.price-table__flag {
+	position: absolute;
+	top: -2px;
+  left: -2px;
+  z-index: 10;
+  width: 72px;
+  height: 72px;
+  //text-indent: -1000px;
+  //overflow: hidden;
+}
+
+.price-table__flag_hit {
+	background: url("../img/flag_hit.png") no-repeat 0 0;
+}
+
+.price-table__service {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 25px;
+  font-size: @font-size;
+  text-align: left;
+  background-color: @bg_white;
+  background-repeat: no-repeat;
+  background-position: 89% 50%;
+  border: 2px solid #e5e5e5;
+
+  @media (min-width: @screen_tablet) {
+    background-position: 50% 50%;
+    padding-top: 11px;
+    padding-left: 15px;
+    padding-bottom: 11px;
+  }
+
+  @media (min-width: @screen_tablet) {
+    background-position: 50% 50%;
+    padding-top: 15px;
+    padding-left: 19px;
+    padding-bottom: 15px;
+  }
+}
+
+.price-table__service_yes {
+	background-image: url("../img/icon-yes.svg");
+}
+
+.price-table__service_no {
+	background-image: url("../img/icon-no.svg");
+}
+
+
+
+.price-table__header_empty {
+	display: none;
+
+	@media (min-width: @screen_tablet) {
+    display: block;
+    opacity: 0;
+    border: none;
+  }
+}
+
+.price-table__service_tablet {
+	display: none;
+	background: none;
+
+	@media (min-width: @screen_tablet) {
+    display: table-cell;
+    background-color: @bg_white;
+    font-size: @font-size;
+    text-transform: none;
+  }
+
+  @media (min-width: @screen_desktop) {
+    font-size: @font-size_big;
+  }
+}
+
+.service-mobile {
+
+  @media (min-width: @screen_tablet) {
+    display: none;
+  }
+}

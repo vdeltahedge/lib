@@ -1,0 +1,28 @@
+.initials
+	margin-bottom 52px
+
+.initials-box
+	margin-bottom 21px
+	display flex
+	align-items center
+	&:last-child
+		margin-bottom 0
+
+	&__label
+		padding-right 18px
+		font-family $ptsans_b, Arial, sans-serif
+		font-size 22px
+		line-height 50px
+		color $brown
+
+	&__input
+		input-p()
+		position relative
+		top -10px
+		padding-left 15px
+		flex-grow 1
+		background-color transparent
+		border 1px solid transparent
+		border-bottom 3px solid $brown
+		border-image url('../images/border-image.png') 0 0 3 0 round
+	

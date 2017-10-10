@@ -1,0 +1,52 @@
+.future
+	margin-bottom 82px
+
+	&__paragraph
+		margin-bottom 34px
+
+	&__title
+		title-p()
+		margin-bottom 5px
+
+	&__content
+		content-p()
+
+	&__list
+		clearfix()
+
+.future-item
+	margin-right 20px
+	float left
+	
+	&__input
+		display none
+
+	&__label
+		position relative
+		display inline-block
+		vertical-align top
+		font-family 'PT Sans Bold'
+		font-size 20px
+		line-height 25px
+		color #000000
+		cursor pointer
+		
+		&::before
+			margin-right 7px
+			display inline-block
+			vertical-align top
+			content ''
+			width 26px
+			height 26px
+			background url('../images/radio.png') no-repeat center
+	
+.future-item > input:checked + label::after
+		position absolute
+		top 0
+		left 0
+		transform translate(58.3%, 58.3%)
+		display block
+		content ''
+		width 12px
+		height 12px
+		background url('../images/radio-check.png') no-repeat center

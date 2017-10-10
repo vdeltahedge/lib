@@ -1,0 +1,61 @@
+@font-face {
+	font-family: 'PT Sans';
+	src: url('../fonts/ptsans.woff');
+}
+
+@font-face {
+	font-family: 'PT Sans Bold';
+	src: url('../fonts/ptsansbold.woff');
+}
+
+body {
+	font-family: 'PT Sans';
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 26px;
+	color: @grey;
+	text-transform: uppercase;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+legend {
+	font-family: 'PT Sans Bold';
+	font-size: 18px;
+	line-height: 26px;
+	text-align: center;
+
+	@media @screen_tab {
+		font-size: 21px;
+		text-align: left;
+	}
+}
+
+button, input, textarea {
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+
+h1 {
+	margin: 0;
+}
+
+img {
+	display: block;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}

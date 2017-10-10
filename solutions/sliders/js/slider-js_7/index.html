@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="slider">
+        <div class="slider__container">
+            <img src="1.jpg" alt="" class="image">
+            <img src="2.jpg" alt="" class="image">
+            <img src="3.jpg" alt="" class="image">
+        </div>
+        <button class="slide-left"></button>
+        <button class="slide-right"></button>
+    </div>
+
+    <script>
+        var slide_left = document.getElementById('slide-left'),
+            slide_right = document.getElementById('slide-right'),
+            total_img = document.getElementsByTagName('img'),
+            idx = 0; // Индекс текущего слайда.
+
+        slide_right.addEventListener('click', moveLeft);
+        function moveLeft(){
+            slide_left.style.display = 'block';
+            total_img[idx].style.display = 'none'; // Скрываем текущий слайд
+            total_img[++idx].style.display = 'block'; // Инкрементируем индекс и показываем следующий слайд
+            if (idx === total_img.length - 1) { // Убираем "правую" стрелку, если справа слайдов больше нет
+             slide_right.style.display = 'none';
+            }
+        }
+
+        //Аналогично, только для левой стрелки
+        slide_left.addEventListener('click', moveRight);
+        function moveRight(){
+            slide_right.style.display = 'block';
+            total_img[idx].style.display = 'none';
+            total_img[--idx].style.display = 'block';
+            if (idx === 0) {
+            slide_left.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

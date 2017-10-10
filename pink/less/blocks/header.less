@@ -1,0 +1,237 @@
+.header {
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	color: @text_white;
+	user-select: none;
+	
+	&__container {
+		.container();
+		.clearfix();
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		@media (min-width: @screen_tablet) {
+			padding-top: 30px;
+			padding-bottom: 32px;
+		}
+	}
+
+	&__logo {
+		float: left;
+	}
+
+	&_mini {
+		background-color: rgba(0, 0, 0, 0.3);
+
+		@media (min-width: @screen_desktop) {
+			display: none;
+		}
+	}
+
+	&_full {
+		display: none;
+		background-color: @grey_dark;
+
+		@media (min-width: @screen_desktop) {
+			display: block;
+			background-color: rgba(0, 0, 0, 0.3);
+		}
+	}
+}
+
+.logo-white {
+
+	&_mobile {
+		width: 74.426px;
+		height: 22.859px;
+
+		@media all and (min-width: @screen_tablet) {
+			display: none;
+		}
+	}
+
+	&_tablet {
+		display: none;
+		width: 146.3px;
+		height: 40.375px;
+
+		@media all and (min-width: @screen_tablet) {
+			display: inline;
+		}
+
+		@media all and (min-width: @screen_desktop) {
+			display: none;
+		}
+	}
+
+	&_desktop {
+		display: none;
+		width: 146.3px;
+		height: 40.375px;
+
+		@media all and (min-width: @screen_desktop) {
+			display: inline;
+		}
+	}
+}
+
+.header__logo:hover .logo-white__text,
+.header__logo:hover .logo-white__glasses {
+	fill: @pink;
+}
+
+.header__logo:active .logo-white__text,
+.header__logo:active .logo-white__glasses {
+	fill: @text_white;
+}
+
+.header__logo:active .logo-white {
+	opacity: 0.3;
+}
+
+.toggle {
+	position: relative;
+	float: right;
+	width: 50px;
+	height: 25px;
+	cursor: pointer;
+
+	@media (min-width: @screen_tablet) {
+		margin-top: 10px;
+	}
+
+	@media (min-width: @screen_desktop) {
+		display: none;
+	}
+}
+
+.toggle_open {
+	background-image: linear-gradient(
+    rgba(255, 255, 255, 1) 16%,
+    rgba(255, 255, 255, 0) 16%,
+    rgba(255, 255, 255, 0) 44%,
+    rgba(255, 255, 255, 1) 44%,
+    rgba(255, 255, 255, 1) 60%,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(255, 255, 255, 0) 84%,
+    rgba(255, 255, 255, 1) 84%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.toggle_open:hover {
+	background-image: linear-gradient(
+    rgba(210, 40, 86, 1) 16%,
+    rgba(255, 255, 255, 0) 16%,
+    rgba(255, 255, 255, 0) 44%,
+    rgba(210, 40, 86, 1) 44%,
+    rgba(210, 40, 86, 1) 60%,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(255, 255, 255, 0) 84%,
+    rgba(210, 40, 86, 1) 84%,
+    rgba(210, 40, 86, 1) 100%
+  );
+}
+
+.toggle_close {
+	z-index: 70;
+	width: 25px;
+	height: 25px;
+	font-size: 50px;
+	line-height: 25px;
+	font-family: @font-family_base;
+	font-weight: 300;
+	color: @text_white;
+}
+
+.toggle_close:hover {
+	color: @pink;
+}
+
+.toggle:active {
+	opacity: 0.3;
+}
+
+.nav-btn {
+	display: none;
+}
+
+.nav-btn:checked ~ .header_full {
+	display: block;
+}
+
+.navigation {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	border-top: 1px solid #000000;
+	background-color: @grey_dark;
+
+	&__item {
+		border-bottom: 1px solid #000000;
+
+		@media (min-width: @screen_desktop) {
+			margin-left: 10.1%;
+			border-bottom: none;
+		}
+	}
+
+	&__link {
+		display: block;
+		padding: 20px 0;
+		border-top: 1px solid #485461;
+		font-weight: 700;
+		color: @text_white;
+		text-transform: uppercase;
+
+		@media (min-width: @screen_desktop) {
+			padding: 10px 0;
+			border: none;
+			font-size: @font-size_big;
+			font-weight: @font-weight_base;
+			text-transform: none;
+		}
+	}
+
+	&__list {
+
+		@media (min-width: @screen_desktop) {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+	}
+
+	@media (min-width: @screen_desktop) {
+		position: static;
+		display: block;
+		float: right;
+		width: 670px;
+		border-top: none;
+		background: none;
+	}
+}
+
+.navigation__link:hover {
+	color: @pink;
+
+	@media (min-width: @screen_desktop) {
+		padding-bottom: 8px;
+		color: @text_white;
+		border-bottom: 2px solid @text_white;
+	}
+}
+	
+.navigation__link:active {
+	color: rgba(210, 40, 86, 0.3);
+
+	@media (min-width: @screen_desktop) {
+		color: @text_white;
+		opacity: 0.3;
+	}
+}

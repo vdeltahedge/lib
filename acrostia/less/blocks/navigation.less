@@ -1,0 +1,66 @@
+.navigation {
+	.clearfix();
+	.container();
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.navigation__logo {
+	float: left;
+	margin: 22px 0 0 0;
+	font-family: 'Damion';
+	font-size: 50px;
+	line-height: 1;
+	color: #ffffff;
+	cursor: default;
+}
+
+.navigation__list {
+	.clearfix();
+	float: right;
+}
+
+.navigation__item {
+	float: left;
+}
+
+.navigation__link {
+	display: block;
+	padding: 42px 26px 10px 26px;
+	font-family: 'Lato Regular';
+	font-size: 18px;
+	line-height: 1;
+	color: #ffffff;
+
+	border: 1px solid transparent;
+	border-top: none;
+	border-radius: 0 0 6px 6px;
+	box-sizing: border-box;
+}
+
+//-------------------------------
+
+.home .navigation__link:hover  {
+	background-color: @blue;
+}
+
+.services .navigation__link:hover {
+	background-color: @red;
+}
+
+.about .navigation__link:hover {
+	background-color: @purple;
+}
+
+.work .navigation__link:hover {
+	background-color: @green;
+}
+
+.contacts .navigation__link:hover {
+	background-color: @blue_c;
+}

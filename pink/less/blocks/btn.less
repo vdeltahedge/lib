@@ -1,0 +1,106 @@
+.btn {
+	display: block;
+	margin-bottom: 30px;
+  line-height: @line-height_h1;
+  font-size: @font-size_big;
+  font-weight: 700;
+  text-align: center;
+}
+
+.btn_download {
+	padding-top: 14px;
+	padding-bottom: 14px;
+  font-size: @font-size_big;
+  font-weight: 700;
+  color: @text_white;
+  border: 3px solid @text_white;
+  border-radius: 27px;
+  text-decoration: none;
+
+  @media (min-width: @screen_tablet) {
+    width: 276px;
+    margin-left: 0;
+  }
+
+  @media (min-width: @screen_desktop) {
+    width: 296px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 1.3125rem;
+  }
+
+  &:hover {
+  	color: @pink;
+    background: @bg_white;
+  }
+
+  &:active {
+  	color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.btn_upload {
+	width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 33px;
+  padding: 19px;
+  text-transform: uppercase;
+  color: @grey_dark;
+  background: @bg_white;
+  border: 2px solid #e7e7e7;
+  border-radius: 2px;
+  cursor: pointer;
+
+  @media (min-width: @screen_tablet) {
+  	margin-bottom: 40px;
+  }
+
+  @media (min-width: @screen_desktop) {
+    padding: 21px;
+    color: @text_white;
+    background: @pink;
+  }
+
+  &:hover {
+  	border-color: @grey_dark;
+  }
+
+  &:active {
+  	color: @text_white;
+    border-color: @grey_dark;
+    background: @grey_dark;
+  }
+}
+
+.btn_green {
+	width: 100%;
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: @green;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+
+  @media (min-width: @screen_tablet) {
+    max-width: 300px;
+    float: left;
+    margin-top: 0;
+  }
+
+  &:hover {
+    background: darken(@green, 10%)
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background: #e5e5e5;
+  }
+}

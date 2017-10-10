@@ -1,0 +1,68 @@
+.slider {
+	position: relative;
+  width: 400px;
+  height: 250px;
+  border: 1px solid #888;
+  text-align: center;
+}
+
+.slider > input {
+	display: none;
+}
+
+.btn {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 8px;
+  background: rgba(90, 90, 90, 0.8);
+  border: 2px solid rgba(190, 190, 190, 0.8);
+
+  cursor: pointer;
+
+  z-index: 100;
+  position: relative;
+
+  margin-right: 4px;
+  top: 90%;
+
+  transition: background 0.8s ease-out 0s;
+ }
+
+.btn:hover {
+  background: rgba(250, 250, 250, 0.8);
+}
+
+.slider > input:checked + label {
+  background: rgba(220, 220, 220, 0.8);
+}
+
+.s-picture {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 0;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+
+
+.slider > input:checked + label + div {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+
+.slider > input:checked + label + div + label {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 50;
+}

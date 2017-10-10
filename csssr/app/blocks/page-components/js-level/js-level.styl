@@ -1,0 +1,72 @@
+.js-level
+	margin-bottom 90px
+
+	&__title
+		title-p()
+		margin-bottom 34px
+
+.slider
+	position relative
+	width 770px
+	height 4px
+	background-color #41261f
+	background url('../images/range-slider.png') no-repeat center
+
+	&__token
+		position absolute
+		top -20px
+		left 375px
+		margin-left -8px
+		width 17px
+		height 14px
+		background url('../images/token.png') no-repeat center
+
+	&__point
+		position absolute
+		top 30px
+		font-family 'PT Sans Bold'
+		font-size 13px
+		line-height 1.5
+		color $brown
+		cursor pointer
+
+		&:nth-of-type(1)
+			left 0
+	
+		&:nth-of-type(2)
+			left 150px
+
+		&:nth-of-type(3)
+			left 375px
+			width 170px
+
+		&:nth-of-type(4)
+			left 630px
+
+.slider::before
+.slider::after
+.slider__pseudo::before
+.slider__pseudo::after
+	position absolute
+	top 2px
+	display block
+	width 2px
+	content ''
+	background-color #41261f
+	box-shadow -1px 0 0 0 #967b5b
+
+.slider::before
+	left 1px
+	height 22px
+
+.slider::after
+	right 1px
+	height 22px
+
+.slider__pseudo::before
+	left 150px
+	height 9px
+
+.slider__pseudo::after
+	left 375px
+	height 9px

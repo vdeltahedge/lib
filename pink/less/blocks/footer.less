@@ -1,0 +1,161 @@
+.footer_main {
+	display: none;
+
+	@media (min-width: @screen_tablet) {
+		display: block;
+	}
+}
+
+.footer__container {
+	.container();
+
+	@media (min-width: @screen_tablet) {
+		width: @width-container_tablet;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: baseline;
+		padding-top: 33px;
+		padding-bottom: 33px;
+	}
+
+	@media (min-width: @screen_desktop) {
+		width: @width-container_desktop;
+	}
+}
+
+.footer__logo {
+	display: block;
+	margin: 40px auto 34px;
+
+	@media (min-width: @screen_tablet) {
+		margin: auto 0;
+	}
+}
+
+.logo-blue_tablet {
+	width: 146px;
+	height: 40px;
+
+	@media all and (min-width: @screen_desktop) {
+		display: none;
+	}
+}
+
+.logo-blue_desktop {
+	display: none;
+	width: 146px;
+	height: 40px;
+
+	@media all and (min-width: @screen_desktop) {
+		display: inline;
+	}
+}
+
+.footer__logo:hover .logo-blue__text {
+	fill: @pink;
+}
+
+.footer__logo:active .logo-blue__text {
+	fill: @grey_dark;
+}
+
+.footer__logo:active .logo-blue {
+	opacity: 0.3;
+}
+
+.social-links {
+	width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 27px;
+
+  @media (min-width: @screen_tablet) {
+    width: 200px;
+    margin: auto;
+  }
+}
+
+.social-link {
+	display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+  width: 45px;
+  height: 45px;
+  font-size: 0;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: @screen_tablet) {
+    margin-right: 8px;
+  }
+
+  &:last-child {
+  	margin-right: 0;
+  }
+
+  &:hover {
+    border-color: @grey_dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social-link_twitter {
+	background-image: url("../img/twitter.svg");
+}
+
+.social-link_facebook {
+	background-image: url("../img/facebook.svg");
+}
+
+.social-link_youtube {
+	background-image: url("../img/youtube.svg");
+}
+
+.copyright {
+	margin-bottom: 40px;
+
+	@media (min-width: @screen_tablet) {
+    width: 140px;
+    margin-bottom: 0;
+    margin-right: 0;
+    font-size: @font-size;
+  }
+
+  @media (min-width: @screen_desktop) {
+  	width: 160px;
+  	font-size: @font-size_big;
+  }
+}
+
+.copyright__text {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.copyright__link {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 12px;
+
+	@media (min-width: @screen_desktop) {
+		margin-left: 9px;
+	}
+}
+
+.copyright__logo {
+	fill: @pink;
+}
+
+.copyright__link:hover .copyright__logo {
+	fill: @grey_dark;
+}
+
+.copyright__link:active .copyright__logo {
+	opacity: 0.3;
+}

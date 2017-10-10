@@ -1,0 +1,149 @@
+.video {
+	@media @screen_tab {
+		width: 84.4%;
+		margin: 60px auto 40px auto;
+	}
+
+	@media @screen_desk {
+		width: 66.66%;
+	}
+}
+
+.video__picture {
+	position: relative;
+
+	& img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+//-------
+
+.video-controls__box .video-controls__repeat,
+.video-controls__box .video-controls__cc,
+.video-controls__box .video-controls__fullscr {
+	display: none;
+
+	@media @screen_tab {
+		display: block;
+	}
+}
+
+.video-controls__box_2 .video-controls__repeat,
+.video-controls__box_2 .video-controls__cc,
+.video-controls__box_2 .video-controls__fullscr {
+	@media @screen_tab {
+		display: none;
+	}
+}
+
+//-------
+
+.video-controls__box {
+	position: absolute;
+	left: 6.25%;
+	bottom: 0;
+	width: 87.5%;
+	padding: 1px 0;
+	background-color: rgba(0, 0, 0, 0.5);
+
+	@media @screen_tab {
+		width: 100%;
+		left: 0;
+	}
+}
+
+.video-controls__box_2 {
+	position: relative;
+	width: 87.5%;
+	margin: 0 auto;
+	height: 66px;
+	background-color: #f2f2f2;
+
+	@media @screen_tab {
+		display: none;
+	}
+}
+
+.video-controls__range {
+	position: relative;
+	width: 84%;
+	height: 3px;
+	margin: 21px auto;
+	background: transparent;
+	background-color: rgba(242, 242, 242, 0.5);
+
+	@media @screen_tab {
+		left: 14.3%;
+		width: 60%;
+		margin: 47px 0;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -3px;
+		left: 10%;
+		display: block;
+		width: 9px;
+		height: 9px;
+		border-radius: 50%;
+		background-color: #ffffff;
+		cursor: pointer;
+	}
+}
+
+.video-controls__repeat {
+	position: absolute;
+	top: 34.84%;
+	left: 9%;
+	width: 16px;
+	height: 20px;
+	cursor: pointer;
+
+	@media @screen_tab {
+
+		left: 5.4%;
+
+		& svg path {
+			fill: #ffffff;
+		}
+	}
+}
+
+.video-controls__cc {
+	position: absolute;
+	top: 34.84%;
+	left: 62%;
+	width: 32px;
+	height: 20px;
+	cursor: pointer;
+
+	@media @screen_tab {
+
+		left: 80.8%;
+
+		& svg path {
+			fill: #ffffff;
+		}
+	}
+}
+
+.video-controls__fullscr {
+	position: absolute;
+	top: 34.84%;
+	left: 84.6%;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+
+	@media @screen_tab {
+
+		left: 90.6%;
+
+		& svg g polygon {
+			fill: #ffffff;
+		}
+	}
+}

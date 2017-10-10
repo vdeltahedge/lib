@@ -1,0 +1,40 @@
+.switches {
+	margin: 0 auto;
+	font-size: 0;
+}
+
+.switches_reviews {
+	@media (min-width: @screen_desktop) {
+		display: none;
+	}
+}
+
+.switches_price {
+	@media (min-width: @screen_tablet) {
+    display: none;
+  }
+}
+
+.switches__btn, .switches_price__btn {
+	display: inline-block;
+	vertical-align: middle;
+	width: 6px;
+	height: 6px;
+	margin-right: 15px;
+	background-color: #bec2c7;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.switches__btn:last-child, .switches_price__btn:last-child {
+	margin-right: 0;
+}
+
+.switches__btn:hover, .switches_price__btn:hover {
+	background-color: #7e868f;
+}
+
+.switches__btn_active, .switches_price__btn_active {
+	border: 3px solid @grey_dark;
+	background-color: @bg_white;
+}
