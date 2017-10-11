@@ -1,0 +1,21 @@
+body {
+	background-color: #aaa;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.responsive-rtl {
+	/*overflow: hidden;*/
+}
+
+.responsive-rtl__box {
+	
+}
+
+.responsive-rtl__img {
+	width: 100%;
+	height: 100%;
+}
