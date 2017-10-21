@@ -1,0 +1,145 @@
+.main-nav {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	background: #232324;
+	box-sizing: border-box;
+
+	&__container {
+		position: relative;
+		padding: 15px;
+		box-sizing: border-box;
+	}
+
+	&__btn {
+		width: 16px;
+		height: 16px;
+		min-height: 16px;
+		padding: 0;
+		position: absolute;
+		top: 50%;
+		left: 20px;
+		transform: translate(0, -50%);
+		border: none;
+		outline: none;
+		background: transparent;
+		cursor: pointer;
+
+		&::after {
+			content: "";
+			display: block;
+			width: 16px;
+			height: 2px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: rgba(255, 255, 255, 0.5);
+			box-shadow: 0 7px 0 0 rgba(255, 255, 255, 0.5), 0 14px 0 0 rgba(255, 255, 255, 0.5);
+		}
+
+		&:visited, &:hover, &:focus, &:active  {
+			background: transparent;
+		}
+
+		&:hover::after {
+			background: rgba(255, 255, 255, 1);
+			box-shadow: 0 7px 0 0 rgba(255, 255, 255, 1), 0 14px 0 0 rgba(255, 255, 255, 1);
+		}
+
+		@media (min-width: 768px) {
+			display: none;
+		}
+	}
+
+
+
+//------------------------
+
+	&__logo {
+		display: none;
+
+		@media (min-width: 768px) {
+			display: block;
+			width: 246px;
+			height: 55px;
+			position: absolute;
+			top: 15px;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+
+		@media (min-width: 854px) {
+			position: static;
+			margin: 0 30px 0 30px;
+			transform: none;
+		}
+	}
+
+	&__logo_m {
+		display: block;
+		width: 30%;
+		height: auto;
+		margin: 0 auto;
+
+		@media (min-width: 768px) {
+			display: none;
+		}
+	}
+
+	&__link-logo {
+		display: block;
+		& img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+//------------------------
+
+	&__list {
+		display: none;
+
+		@media (min-width: 768px) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0 auto;
+			padding: 65px 0 0 0;
+			box-sizing: border-box;
+		}
+
+		@media (min-width: 854px) {
+			padding: 22.5px 0;
+		}
+
+		& .uk-active .main-nav__link {
+			color: rgb(234, 80, 83);
+			text-decoration: none;
+		}
+
+		& .uk-active .main-nav__link:hover {
+			background: transparent;
+		}
+	}
+
+	&__link {
+		display: block;
+		padding: 0 10px;
+		font-family: Tahoma;
+		font-size: 14px;
+		line-height: 35px;
+		color: #87878e;
+		text-decoration: none;
+		text-transform: uppercase;
+		border-radius: 3px;
+		box-sizing: border-box;
+
+		&:hover {
+			color: #87878e;
+			text-decoration: none;
+			background: #353538;
+		}
+	}
+}
