@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Giant</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<nav class="nav">
+			<div class="brand">
+				<img class="brand__logo" src="img/logo.png" alt="">
+				<span class="brand__name">Giant</span>
+			</div>
+			<ul class="nav__list_mob  nav__list_closed">
+				<li class="nav__item_mob">
+					<a class="nav__link" href="">Home</a>
+				</li>
+				<li class="nav__item_mob">
+					<a class="nav__link" href="">Features</a>
+				</li>
+				<li class="nav__item_mob">
+					<a class="nav__link" href="">Pricing</a>
+				</li>
+				<li class="nav__item_mob">
+					<a class="nav__link" href="">Download Now</a>
+				</li>
+			</ul>
+			<ul class="nav__list">
+				<li class="nav__item">
+					<a class="nav__link" href="">Home</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="">Features</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="">Pricing</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link  nav__link_d" href="">Download Now</a>
+				</li>
+			</ul>
+			<button class="nav__btn" type="button"></button>
+		</nav>
+		<section class="intro">
+			<div class="intro__container">
+				<h1 class="intro__heading">A Powerful & Uninique<br> App Landing Template</h1>
+				<p class="intro__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<ul class="intro__list">
+					<li class="intro__item">Unlimited colors: banner with images, slider or video</li>
+					<li class="intro__item">Fully Responsive and powered by HTML5 and CSS3.</li>
+					<li class="intro__item">Very easy to customize: set up in minutes</li>
+				</ul>
+				<a class="intro__start" href="">Start Exploring Us</a>
+			</div>
+		</section>
+	</header>
+
+	<section class="advantages">
+		<div class="advantages__container">
+			<div class="advantages-item  advantages-item_1">
+				<strong class="advantages-item__heading">Sell any product online</strong>
+				<p class="advantages-item__p">Over 92% of computers are infected with adware and spyware.</p>
+			</div>
+			<div class="advantages-item  advantages-item_2">
+				<strong class="advantages-item__heading">Responsive, HTML5, CSS3</strong>
+				<p class="advantages-item__p">Computers have become ubiquitous in almost every facet of our lives.</p>
+			</div>
+			<div class="advantages-item  advantages-item_3">
+				<strong class="advantages-item__heading">Very easy to customize</strong>
+				<p class="advantages-item__p">Many of us are so used to working on a computer desktop that when it comes</p>
+			</div>
+			<div class="advantages-item  advantages-item_4">
+				<strong class="advantages-item__heading">Designed to convert</strong>
+				<p class="advantages-item__p">If you are looking for a new way to promote your business that won't cost</p>
+			</div>
+			<div class="advantages-item  advantages-item_5">
+				<strong class="advantages-item__heading">Unlimited colors</strong>
+				<p class="advantages-item__p">Audio player software is used to play back sound recordings in one of the many</p>
+			</div>
+			<div class="advantages-item  advantages-item_6">
+				<strong class="advantages-item__heading">With no boundaries</strong>
+				<p class="advantages-item__p">Now, if you are interested in being the best player, getting really good money and</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="description">
+		<div class="description__container">
+			<img class="description__img" src="img/phone.png" alt="Delta">
+			<div class="description-content">
+				<h2 class="description-content__heading">We don't leave you stranded</h2>
+				<p class="description-content__p">Everyone's reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+				<p class="description-content__p  description-content__p_2">Everyone's reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, why develop this totally separate skill? If you're already a developer, or a PM, or a UX designer.</p>
+				<ul class="description-content__list">
+					<li class="description-content__item">Unlimited colors: banner with images, slider or video</li>
+					<li class="description-content__item">Fully Responsive and powered by HTML5 and CSS3.</li>
+					<li class="description-content__item">Very easy to customize: set up in minutes</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="screenshots">
+		<div class="screenshots__container">
+			<div class="screenshots-content">
+				<h2 class="screenshots-content__heading">Take a look at our screenshots</h2>
+				<p class="screenshots-content__p">Everyone's reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+			</div>
+			<div class="screenshots__slider">
+  				<carousel-3d id="my3dCarousel" :controls-visible="true" :clickable="false" :display="7" :width="360" :height="500" :border="1" >
+    				<slide v-for="(slide, i) in slides" :index="i">
+        				<img src="img/screenshot-1.png" alt="">
+    				</slide>
+  				</carousel-3d>
+			</div>
+		</div>
+	</section>
+
+	<section class="prices">
+		<div class="prices__container">
+			<div class="prices-content">
+				<h2 class="prices-content__heading">We've got the perfect package for you</h2>
+				<p class="prices-content__p">Everyone's reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+			</div>
+			<ul class="prices__list">
+				<li class="prices-item">
+					<span class="prices-item__name">Basic</span>
+					<p class="prices-item__price"><sup>$</sup>12.0<sub>/m</sub></p>
+					<ul class="prices-item__ul">
+						<li class="prices-item__li"></li>
+						<li class="prices-item__li">Multiple Access</li>
+						<li class="prices-item__li">Sms Support</li>
+						<li class="prices-item__li">24/7 Online Support</li>
+					</ul>
+					<p class="prices-item__trial">Start Free Trial</p>
+					<a class="prices-item__buy" href="">Buy Now</a>
+				</li>
+				<li class="prices-item">
+					<span class="prices-item__name">Standart</span>
+					<p class="prices-item__price"><sup>$</sup>24.0<sub>/m</sub></p>
+					<ul class="prices-item__ul">
+						<li class="prices-item__li"></li>
+						<li class="prices-item__li">Multiple Access</li>
+						<li class="prices-item__li">Sms Support</li>
+						<li class="prices-item__li">24/7 Online Support</li>
+					</ul>
+					<p class="prices-item__trial">Start Free Trial</p>
+					<a class="prices-item__buy" href="">Buy Now</a>
+				</li>
+				<li class="prices-item">
+					<span class="prices-item__name">Premium</span>
+					<p class="prices-item__price"><sup>$</sup>250.0<sub>/m</sub></p>
+					<ul class="prices-item__ul">
+						<li class="prices-item__li"></li>
+						<li class="prices-item__li">Multiple Access</li>
+						<li class="prices-item__li">Sms Support</li>
+						<li class="prices-item__li">24/7 Online Support</li>
+					</ul>
+					<p class="prices-item__trial">Start Free Trial</p>
+					<a class="prices-item__buy" href="">Buy Now</a>
+				</li>
+				<li class="prices-item">
+					<span class="prices-item__name">Enterprise</span>
+					<p class="prices-item__price"><sup>$</sup>999.0<sub>/m</sub></p>
+					<ul class="prices-item__ul">
+						<li class="prices-item__li"></li>
+						<li class="prices-item__li">Multiple Access</li>
+						<li class="prices-item__li">Sms Support</li>
+						<li class="prices-item__li">24/7 Online Support</li>
+					</ul>
+					<p class="prices-item__trial">Start Free Trial</p>
+					<a class="prices-item__buy" href="">Buy Now</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	
+	<section class="video-content">
+		<video poster="img/video-poster.jpg">
+			<source src="" type="video/mp4">
+  			<source src="" type="video/webm">
+  			<source src="" type="video/ogg">
+		</video>
+		<button class="video-content__play">&#9658;</button>
+	</section>
+
+	<section class="reviews">
+		<div class="reviews__container">
+			<div class="reviews-content">
+				<h2 class="reviews-content__heading">What our customers are saying</h2>
+				<p class="reviews-content__p">Everyone's reasons for learning user interface design are different. If you're already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+			</div>
+		  	<div class="responsive">
+		  		<div class="responsive-item">
+          			<p class="responsive-item__p">Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.</p>
+          			<div class="responsive-item__box  responsive-item__box_1">
+          				<span class="responsive-item__customer">Alexandra Bullok</span><br>
+          				<span class="responsive-item__corp">Apple Inc.</span>
+          			</div>
+        		</div>
+        		<div class="responsive-item">
+          			<p class="responsive-item__p">The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.</p>
+          			<div class="responsive-item__box  responsive-item__box_3">
+          				<span class="responsive-item__customer">Samanta Bilbau</span><br>
+          				<span class="responsive-item__corp">Apple Inc.</span>
+          			</div>
+        		</div>
+       			 <div class="responsive-item">
+          			<p class="responsive-item__p">Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.</p>
+          			<div class="responsive-item__box  responsive-item__box_1">
+          				<span class="responsive-item__customer">Alexandra Bullok</span><br>
+          				<span class="responsive-item__corp">Apple Inc.</span>
+          			</div>
+        		</div>
+        		<div class="responsive-item">
+          			<p class="responsive-item__p">Definely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.</p>
+          			<div class="responsive-item__box  responsive-item__box_2">
+          				<span class="responsive-item__customer">Bary Sebastian</span><br>	
+						<span class="responsive-item__corp">Apple Inc.</span>
+          			</div>
+        		</div>
+        		<div class="responsive-item">
+          			<p class="responsive-item__p">Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.</p>
+          			<div class="responsive-item__box  responsive-item__box_3">
+          				<span class="responsive-item__customer">Samanta Bilbau</span><br>
+          				<span class="responsive-item__corp">Apple Inc.</span>
+          			</div>
+        		</div>
+    		</div>
+		</div>
+	</section>
+
+	<section class="download">
+		<div class="download__container">
+			<h2 class="download__heading">Download Giant App Now</h2>
+			<div class="download__links">
+				<a class="download-os">
+					<div class="download-os__icon  download-os__icon_apple">
+						<svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 298.013 365.554" ><defs><clipPath id="a"><path d="M0 88h298.012v277.555H0zm0 0"/></clipPath></defs><path d="M219.395 0h2.57c2.047 25.785-7.746 45.066-19.746 59.012-11.676 13.804-27.75 27.27-53.774 25.242-1.726-25.402 8.164-43.262 20.067-57.227C179.566 14.105 199.872 2.59 219.395 0" fill-rule="evenodd" fill="#777777"/><g clip-path="url(#a)"><path d="M298.012 268.297v.781c-7.305 22.094-17.719 41.074-30.418 58.633-11.598 15.992-25.864 37.46-51.27 37.46-21.87 0-36.437-14.105-58.93-14.507-23.84-.379-36.921 11.84-58.632 14.89h-7.446c-15.992-2.347-28.851-14.968-38.242-26.327C25.402 305.52 3.992 262.016 0 206.375V189.98c1.727-39.808 21.008-72.257 46.793-87.925 13.562-8.328 32.227-15.453 52.992-12.32 8.93 1.421 18.02 4.472 26.028 7.445 7.523 2.988 16.996 8.086 25.921 7.843 6.121-.16 12.16-3.37 18.282-5.558 17.855-6.52 35.414-13.883 58.629-10.434 27.812 4.235 47.578 16.531 59.714 35.656-23.515 14.989-42.093 37.563-38.945 76.047 2.809 35.036 23.195 55.48 48.598 67.563" fill-rule="evenodd" fill="#777777"/></g></svg>
+					</div>
+					<div class="download-os__content  download-os__content_1">
+						<p class="download-os__title">Download</p>
+						<span class="download-os__body">Download from app store</span>
+					</div>
+				</a>
+				<a class="download-os">
+					<div class="download-os__icon">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 475.071 475.071"><path fill="#777777" d="M65.947 153.884c-8.183 0-15.136 2.853-20.844 8.566-5.708 5.711-8.564 12.562-8.564 20.555v122.772c0 8.179 2.855 15.126 8.564 20.837 5.708 5.712 12.657 8.562 20.841 8.562 8.186 0 15.085-2.851 20.699-8.562 5.618-5.711 8.425-12.658 8.425-20.837V183.005c0-7.996-2.857-14.847-8.565-20.555-5.709-5.71-12.564-8.566-20.556-8.566zm40.547 195.573c0 8.754 3.046 16.177 9.136 22.269 6.091 6.085 13.512 9.13 22.27 9.13h21.128l.288 64.81c0 8.186 2.855 15.129 8.564 20.841 5.708 5.711 12.562 8.565 20.555 8.565 8.188 0 15.133-2.854 20.844-8.565 5.711-5.712 8.564-12.655 8.564-20.841v-64.81h39.397v64.81c0 8.186 2.854 15.129 8.562 20.841 5.715 5.711 12.662 8.565 20.848 8.565 8.179 0 15.126-2.854 20.834-8.565 5.708-5.712 8.559-12.655 8.559-20.841v-64.81h21.416c8.56 0 15.89-3.039 21.98-9.13 6.092-6.092 9.138-13.515 9.138-22.269V159.308H106.494v190.149zM302.345 43.682L322.61 6.279c1.335-2.474.855-4.377-1.424-5.708-2.478-1.143-4.38-.572-5.708 1.714l-20.56 37.685c-18.082-7.994-37.205-11.991-57.384-11.991-20.174 0-39.304 3.997-57.387 11.991L159.591 2.286C158.263 0 156.357-.571 153.883.572c-2.285 1.331-2.758 3.234-1.426 5.708l20.271 37.402c-20.559 10.467-36.923 25.076-49.108 43.824-12.181 18.749-18.273 39.259-18.273 61.525h264.095c0-22.266-6.091-42.777-18.273-61.525-12.187-18.748-28.452-33.358-48.824-43.824zM185.144 98.068c-2.187 2.19-4.803 3.284-7.849 3.284-3.046 0-5.614-1.093-7.71-3.284-2.091-2.187-3.14-4.805-3.14-7.85 0-3.046 1.049-5.664 3.14-7.854 2.093-2.19 4.665-3.282 7.71-3.282 3.042 0 5.659 1.091 7.849 3.282 2.19 2.19 3.284 4.808 3.284 7.854 0 3.046-1.094 5.66-3.284 7.85zm120.345 0c-2.098 2.19-4.668 3.284-7.713 3.284-3.046 0-5.657-1.093-7.848-3.284-2.19-2.187-3.281-4.805-3.281-7.85 0-3.046 1.091-5.664 3.281-7.854 2.19-2.19 4.802-3.282 7.848-3.282 3.045 0 5.615 1.091 7.713 3.282 2.088 2.19 3.139 4.808 3.139 7.854 0 3.046-1.048 5.66-3.139 7.85zm124.475 64.238c-5.708-5.614-12.655-8.422-20.841-8.422-7.991 0-14.843 2.808-20.551 8.422-5.711 5.616-8.568 12.517-8.568 20.699v122.772c0 8.179 2.857 15.126 8.568 20.837 5.708 5.712 12.56 8.562 20.551 8.562 8.186 0 15.133-2.851 20.841-8.562 5.715-5.711 8.568-12.658 8.568-20.837V183.005c0-8.183-2.853-15.084-8.568-20.699z"/></svg>
+					</div>
+					<div class="download-os__content  download-os__content_2">
+						<p class="download-os__title">Download</p>
+						<span class="download-os__body">Download from app store</span>
+					</div>
+				</a>
+				<a class="download-os">
+					<div class="download-os__icon">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"><path fill="#777777" d="M.176 224L.001 67.963l192-26.072V224H.176zM224.001 37.241L479.937 0v224H224.001V37.241zM479.999 256l-.062 224-255.936-36.008V256h255.998zM192.001 439.918L.157 413.621.147 256h191.854v183.918z"/></svg>
+					</div>
+					<div class="download-os__content  download-os__content_3">
+						<p class="download-os__title">Download</p>
+						<span class="download-os__body">Download from app store</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__icons"></div>
+			<p class="footer__copyright">Copyright 2017 | UXSEVEN - a sister concern of codepixar.com</p>
+		</div>
+	</footer>	
+
+
+	
+
+<script src="js/vue.min.js"></script>
+<script src="js/vue-carousel-3d.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

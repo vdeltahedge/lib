@@ -1,0 +1,182 @@
+.prices {
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 20px 5%;
+	box-sizing: border-box;
+
+	@media (min-width: 1200px) {
+		padding: 40px 0;
+	}
+
+	@media (min-width: 1900px) {
+		padding: 80px 0;
+	}
+
+	&__container {
+		width: 100%;
+		margin: 0 auto;
+		box-sizing: border-box;
+		
+		@media (min-width: 1200px) {
+			width: 60%;
+		}
+	}
+
+	&-content {
+		@media (min-width: 720px) {
+			max-width: 700px;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		&__heading {
+			margin: 0 auto 20px 0;
+			font-family: 'Dosis Medium';
+			font-size: 24px;
+			line-height: 30px;
+			color: #000000;
+
+			@media (min-width: 800px) {
+				font-size: 30px;
+				line-height: 30px;
+			}
+
+			@media (min-width: 1900px) {
+				font-size: 36px;
+				line-height: 30px;
+			}
+		}
+
+		&__p {
+			font-family: 'Roboto Light';
+			font-size: 12px;
+			line-height: 22px;
+			color: #777777;
+
+			@media (min-width: 1900px) {
+				font-size: 14px;
+				line-height: 24px;
+			}
+		}
+	}
+
+	&__list {
+		margin: 40px auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		
+		@media(min-width: 720px) {
+			align-items: flex-start;
+		}
+
+		@media (min-width: 1900px) {
+			margin: 80px 0;
+		}
+	}
+
+	&-item {
+		width: 130px;
+		max-width: 260px;
+		margin: 0 0 40px 0;
+		text-align: center;
+		box-shadow: 0 0 20px 1px #ececec;
+
+		&:hover &__price, &:hover &__buy {
+			color: #ffffff;
+			background: linear-gradient(90deg, #fd712c, #f31e7a);
+		}
+
+		@media(min-width: 1200px) {
+			width: 260px;
+			margin: 0 0 60px 0;
+		}
+
+		&__name {
+			font-family: 'Dosis Regular';
+			font-size: 20px;
+			line-height: 24px;
+			font-weight: bold;
+			color: #000000;
+		}
+
+		&__price {
+			margin: 0;
+			padding: 30px 0 40px 0;
+			position: relative;
+			font-family: 'Dosis Medium';
+			font-size: 36px;
+			line-height: 42px;
+			font-weight: bold;
+			color: #000000;
+			&::before {
+				content: "";
+				display: block;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 32px 0 0 65px;
+				border-color: transparent transparent transparent #ffffff;;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+
+				@media (min-width: 1200px) {
+					border-width: 35px 0 0 130px;
+				}
+			}
+			&::after {
+				content: "";
+				display: block;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 0 32px 65px;
+				border-color: transparent transparent #ffffff;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+
+				@media (min-width: 1200px) {
+					border-width: 0 0 35px 130px;
+				}
+			}
+			& sub, & sup {
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+
+		&__li {
+			font-family: 'Roboto Light';
+			font-size: 14px;
+			line-height: 30px;
+			color: #777777;
+		}
+
+		&__trial {
+			margin: 30px 0 0 0;
+			font-family: 'Roboto Light';
+			font-size: 14px;
+			line-height: 24px;
+			color: #aaaaaa;
+		}
+
+		&__buy {
+			max-width: 140px;
+			margin: 0 auto;
+			padding: 10px 30px;
+			display: block;
+			font-family: 'Roboto Medium';
+			font-size: 14px;
+			line-height: 24px;
+			font-weight: bold;
+			color: #000000;
+			border: 3px solid #d6d6d6;
+			border-radius: 30px;
+		}
+	}
+}

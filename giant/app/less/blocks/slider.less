@@ -1,0 +1,73 @@
+.arrowStyle {
+	display: none !important;
+
+	@media (min-width: 720px) {
+		width: 40px !important;
+		height: 40px !important;
+		display: flex !important;
+		justify-content: center !important;
+		align-items: center !important;
+		font-size: 20px !important;
+		font-weight: bold !important;
+		color: #777777 !important;
+		border: 2px solid #d7d9db !important;
+		border-radius: 50% !important;
+		background: transparent !important;
+	    &:hover {
+		    color: #ffffff !important;
+		    background: linear-gradient(90deg, #fd712c, #f31e7a) !important;
+		}
+	}
+}
+
+.slick-prev {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	left: -25px;
+	z-index: 100;
+	transform: translate(0, -50%);
+	font-size: 18px;
+	font-weight: bold;
+	color: #777777;
+	border: 2px solid #d7d9db;
+	border-radius: 50%;
+	background: transparent;
+	cursor: pointer;
+
+	&:hover {
+		color: #ffffff;
+		background: linear-gradient(90deg, #fd712c, #f31e7a);
+	}
+}
+
+.slick-next {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	right: -25px;
+	z-index: 100;
+	transform: translate(0, -50%);
+	font-size: 18px;
+	font-weight: bold;
+	color: #777777;
+	border: 2px solid #d7d9db;
+	border-radius: 50%;
+	background: transparent;
+	cursor: pointer;
+
+	&:hover {
+		color: #ffffff;
+		background: linear-gradient(90deg, #fd712c, #f31e7a);
+	}
+}
+
+

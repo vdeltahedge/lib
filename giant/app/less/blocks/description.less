@@ -1,0 +1,136 @@
+.description {
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 20px 5%;
+	box-sizing: border-box;
+
+	&::before {
+		content: "";
+		width: 100%;
+		height: 2px;
+		display: block;
+		transform: translate(0, -20px);
+		background: #eeeeee;
+
+		@media (min-width: 1200px) {
+			width: 60%;
+			margin: 0 auto;
+			transform: translate(0, -50px);
+		}
+
+		@media (min-width: 1900px) {
+			transform: translate(0, -120px);
+		}
+	}
+
+	@media (min-width: 1200px) {
+		padding: 50px 0;
+	}
+
+	@media (min-width: 1900px) {
+		padding: 120px 0;
+	}
+
+	&__container {
+		width: 100%;
+		margin: 0 auto;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+
+		@media (min-width: 720px) {
+			flex-direction: row;
+			align-items: center;
+		}
+
+		@media (min-width: 1200px) {
+			width: 60%;
+		}
+	}
+
+	&__img {
+		width: 60%;
+		max-width: 275px;
+		margin: 20px 0;
+		display: block;
+		align-self: center;
+
+		@media (min-width: 720px) {
+			width: 35%;
+			max-width: 300px;
+			align-self: auto;
+		}
+
+		@media (min-width: 1900px) {
+			max-width: 100%;
+		}
+	}
+
+	&-content {
+		@media (min-width: 720px) {
+			width: 55%;
+		}
+
+		&__heading {
+			margin: 0 auto 20px 0;
+			font-family: 'Dosis Medium';
+			font-size: 24px;
+			line-height: 30px;
+			color: #000000;
+
+			@media (min-width: 800px) {
+				font-size: 30px;
+				line-height: 30px;
+			}
+
+			@media (min-width: 1900px) {
+				font-size: 36px;
+				line-height: 30px;
+			}
+		}
+
+		&__p {
+			font-family: 'Roboto Light';
+			font-size: 12px;
+			line-height: 22px;
+			color: #777777;
+
+			@media (min-width: 1900px) {
+				font-size: 14px;
+				line-height: 24px;
+			}
+
+			&_2 {
+				margin: 20px auto 12px auto;
+			}
+		}
+		
+		&__item {
+			padding: 0 0 0 20px;
+			position: relative;
+			font-family: 'Roboto Regular';
+			font-size: 12px;
+			line-height: 20px;
+
+			&::before {
+				content: "";
+				width: 14px;
+				height: 14px;
+				display: inline-block;
+				position: absolute;
+				top: 3px;
+				left: 0;
+				background: url('../img/checked-b.png') no-repeat center;
+			}
+
+			@media (min-width: 800px) {
+				font-size: 14px;
+				line-height: 24px;
+			}
+		}
+	}
+}

@@ -1,11 +1,11 @@
 $('.responsive').slick({
-  dots: true,
+  dots: false,
   arrows: true,
   infinite: true,
   speed: 500,
   autoplay: false,
   /*autoplaySpeed: 2000,*/
-  slidesToShow: 1,
+  slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [
     {

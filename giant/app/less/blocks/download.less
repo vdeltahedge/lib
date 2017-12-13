@@ -1,0 +1,105 @@
+.download {
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 20px 5%;
+	box-sizing: border-box;
+	background: linear-gradient(90deg, #fd712c, #f31e7a);
+
+	@media (min-width: 1200px) {
+		padding: 40px 0;
+	}
+
+	@media (min-width: 1900px) {
+		padding: 80px 0;
+	}
+
+	&__container {
+		width: 100%;
+		margin: 0 auto;
+		box-sizing: border-box;
+		
+		@media (min-width: 1200px) {
+			width: 60%;
+		}
+	}
+
+	&__heading {
+		margin: 20px auto 40px 0;
+		font-family: 'Dosis Regular';
+		font-size: 24px;
+		line-height: 30px;
+		color: #ffffff;
+
+		@media (min-width: 720px) {
+			text-align: center;
+		}
+
+		@media (min-width: 800px) {
+			font-size: 30px;
+			line-height: 30px;
+		}
+
+		@media (min-width: 1900px) {
+			font-size: 36px;
+			line-height: 30px;
+		}
+	}
+
+	&__links {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&-os {
+		margin: 10px auto;
+		padding: 10px 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #f7fafc;
+		border-radius: 5px;
+		&:hover {
+				& path {
+					fill: #f31e7a;
+				}
+			}
+
+		&__content {
+			margin: 10px 0;
+			position: relative;
+		}
+
+		&__title {
+			margin: 0 0 10px 0;
+			font-family: 'Dosis SemiBold';
+			font-size: 24px;
+			line-height: 24px;
+			color: #000000;
+
+			@media (min-width: 800px) {
+				font-size: 30px;
+				line-height: 24px;
+			}
+		}
+
+		&__body {
+			font-family: 'Roboto Light';
+			font-size: 14px;
+			line-height: 24px;
+			color: #777777;
+		}
+
+		&__icon {
+			width: 50px;
+			height: 50px;
+			margin: 0 30px 0 0;
+
+			&_apple {
+				margin: 0 30px 20px 0;
+			}
+		}
+	}
+}

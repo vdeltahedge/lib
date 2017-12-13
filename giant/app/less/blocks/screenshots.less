@@ -1,0 +1,71 @@
+.screenshots {
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 40px 5%;
+	box-sizing: border-box;
+
+	@media (min-width: 1200px) {
+		padding: 60px 0;
+	}
+
+	@media (min-width: 1900px) {
+		padding: 80px 0;
+	}
+
+	&__container {
+		width: 100%;
+		margin: 0 auto;
+		box-sizing: border-box;
+
+		@media (min-width: 1200px) {
+			width: 60%;
+		}
+	}
+
+	&-content {
+		@media (min-width: 720px) {
+			text-align: center;
+			max-width: 700px;
+			margin: 0 auto;
+		}
+
+		&__heading {
+			margin: 0 auto 20px 0;
+			font-family: 'Dosis Medium';
+			font-size: 24px;
+			line-height: 30px;
+			color: #000000;
+
+			@media (min-width: 800px) {
+				font-size: 30px;
+				line-height: 30px;
+			}
+
+			@media (min-width: 1900px) {
+				font-size: 36px;
+				line-height: 30px;
+			}
+		}
+
+		&__p {
+			font-family: 'Roboto Light';
+			font-size: 12px;
+			line-height: 22px;
+			color: #777777;
+
+			@media (min-width: 1900px) {
+				font-size: 14px;
+				line-height: 24px;
+			}
+		}
+	}
+
+	&__slider {
+		margin: 40px auto;
+
+		@media (min-width: 1900px) {
+			padding: 60px 0;
+		}
+	}
+}

@@ -1,0 +1,133 @@
+.reviews {
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 20px 5%;
+	box-sizing: border-box;
+
+	@media (min-width: 1200px) {
+		padding: 40px 0;
+	}
+
+	@media (min-width: 1900px) {
+		padding: 80px 0;
+	}
+
+	&__container {
+		width: 100%;
+		margin: 0 auto;
+		box-sizing: border-box;
+		
+		@media (min-width: 1200px) {
+			width: 60%;
+		}
+	}
+
+	&-content {
+		@media (min-width: 720px) {
+			max-width: 700px;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		&__heading {
+			margin: 0 auto 20px 0;
+			font-family: 'Dosis Medium';
+			font-size: 24px;
+			line-height: 30px;
+			color: #000000;
+
+			@media (min-width: 800px) {
+				font-size: 30px;
+				line-height: 30px;
+			}
+
+			@media (min-width: 1900px) {
+				font-size: 36px;
+				line-height: 30px;
+			}
+		}
+
+		&__p {
+			font-family: 'Roboto Light';
+			font-size: 12px;
+			line-height: 22px;
+			color: #777777;
+
+			@media (min-width: 1900px) {
+				font-size: 14px;
+				line-height: 24px;
+			}
+		}
+	}
+}
+
+.responsive {
+	width: 100%;
+	max-width: 360px;
+	margin: 40px auto;
+	box-shadow: 0 0 20px 1px #ececec;
+
+	@media (min-width: 1200px) {
+		max-width: 1260px;
+	}
+
+	&-item {
+		padding: 0 30px;
+		box-sizing: border-box;
+		box-shadow: 0 0 20px 1px #ececec;
+
+		&__p {
+			font-family: 'Roboto Light';
+			font-size: 14px;
+			line-height: 24px;
+			color: #808080;
+		}
+
+		&__box {
+			padding: 20px 0 20px 100px;
+			position: relative;
+
+			&::before {
+				content: "";
+				display: inline-block;
+				width: 80px;
+				height: 80px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				border-radius: 50%;
+			}
+
+			&_1::before {
+				background: url('../img/1.png') center no-repeat;
+			}
+
+			&_2::before {
+				background: url('../img/2.png') center no-repeat;
+			}
+
+			&_3::before {
+				background: url('../img/3.png') center no-repeat;
+			}
+		}
+
+		
+
+		&__customer {
+			font-family: 'Dosis Regular';
+			font-size: 18px;
+			line-height: 24px;
+			font-weight: bold;
+			color: #000000;
+		}
+
+		&__corp {
+			font-family: 'Roboto Light';
+			font-size: 14px;
+			line-height: 24px;
+			font-weight: normal;
+			color: #808080;
+		}
+	}
+}
